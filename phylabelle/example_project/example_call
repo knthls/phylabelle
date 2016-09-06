@@ -1,0 +1,2 @@
+python make_labels.py data/example_data.tsv "Species" "Strain" "Bioproject Accession" "Label" -s "\t" -c "Label" "Label Curation" > data/labels.tsv
+

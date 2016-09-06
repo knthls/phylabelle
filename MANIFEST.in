@@ -1,0 +1,3 @@
+include phylabelle/example_project/data/example_data.tsv
+include phylabelle/example_project/make_labels.py
+include phylabelle/example_project/example_call
