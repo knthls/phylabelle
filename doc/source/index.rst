@@ -13,7 +13,6 @@ Contents:
 
    README
    settings
-   modules
    phylophlan
 
 

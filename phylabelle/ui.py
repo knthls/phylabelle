@@ -217,7 +217,9 @@ def get_args():
     :return: parsed arguments
     """
     #: ArgumentParser-instance
-    arg_parser = FriendlyArgumentParser(description=__doc__)
+    arg_parser = FriendlyArgumentParser(description='Identify phylogenetically close '
+                                                    'pairs of proteomes, located in different '
+                                                    'partitions across the phylogenetic tree.')
     subparsers = arg_parser.add_subparsers(dest='subparser')
 
     #: store all subparsers as dict entries, keyed with subprogram name

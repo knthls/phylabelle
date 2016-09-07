@@ -27,11 +27,11 @@ To obtain the installation files just download the the source distribution from
 
 or just use
 
-	``git clone REPO``
+    ``git clone REPO``
 
 move to phylabelle's root directory and then install it with
 
-	``python setup.py install``
+    ``python setup.py install``
 
 If the installation fails because of lxml (e.g. because you're trying to install
 phylabelle in a virtual environment) try it with libxml2-dev and libxslt-dev
@@ -186,15 +186,17 @@ have a distance that is lower than a certain threshold value.
 
     ``phylabelle get_pairs -a THRESHOLD``
 
+
 2. Show the closest neighbor for a specific query organism.
 
     ``phylabelle get_pairs -q ACCESSION``
 
+
 To show all available accessions use
 
-    ``phylabelle ls -a``
+    ``phylabelle ls``
 
 Worth mentioning is the ``-b`` switch of get_pairs: using this, phylabelle
-will only give out those organisms where the *beeing-closest-partner-of*-
-relation is bijective, i.e. organism A is the closest partner for organism B
-and vice versa.
+will perform a minimum distance matching between all pairs in the two groups.
+A plain call to ``phylabelle get_pairs`` is equivalent to
+``phylabelle get_pairs -a inf -b``.

@@ -1,5 +1,5 @@
 MANIFEST.in
-README
+README.rst
 setup.py
 phylabelle/__init__.py
 phylabelle/core.py
@@ -11,6 +11,7 @@ phylabelle/selection.py
 phylabelle/settings.py
 phylabelle/ui.py
 phylabelle/utils.py
+phylabelle/version.py
 phylabelle.egg-info/PKG-INFO
 phylabelle.egg-info/SOURCES.txt
 phylabelle.egg-info/dependency_links.txt

@@ -74,7 +74,7 @@ PHYLOPHLAN = '/home/USER/PATH/TO/nsegata-phylophlan-f2d78771d71d/'
 #: length of a line for help text output
 STD_LINE_LEN = 80
 
-EMAIL = 'knauthc@rki.de'
+EMAIL = 'user@host.whatever'
 
 DIRECTORIES = {
     'proteomes': 'data/proteomes',

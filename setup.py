@@ -1,19 +1,22 @@
 #!/usr/bin/env python
-import os
 import sys
+from distutils.util import convert_path
 
 from setuptools import setup, find_packages
-
-
-def read(filename):
-    return open(os.path.join(os.path.dirname(__file__), filename), 'r').read()
 
 if sys.version_info[:2] < (2, 7) or sys.version_info[0] > 3:
     raise RuntimeError("Python version 2.7 required.")
 
+main_ns = {}
+with open(convert_path('phylabelle/version.py'), 'r') as ver_file:
+    exec(ver_file.read(), main_ns)
+
+with open(convert_path('README.rst'), 'r') as rm_file:
+    readme = rm_file.read()
+
 setup(
     name='phylabelle',
-    version='0.9',
+    version=main_ns['__version__'],
     description='Identify phylogenetically close pairs of proteomes, located '
                 'in different partitions across the phylogenetic tree.',
     author='Christian Knauth',
@@ -21,11 +24,11 @@ setup(
     packages=find_packages(),
     install_requires=['nose>=1.3.4',
                       'ete2>=2.2',
-                      'sortedcontainers==1.4.4',
-                      'networkx==1.9.1',
+                      'sortedcontainers>=1.4.4',
+                      'networkx>=1.9.1',
                       'lxml',
-                      'sqlalchemy==1.0.4',
-                      'tabulate==0.7.5',
+                      'sqlalchemy>=1.0.4',
+                      'tabulate>=0.7.5',
                       ],
     entry_points={
         'console_scripts': [
@@ -42,5 +45,5 @@ setup(
         ],
     },
     license='GNU GPL',
-    long_description=read('README'),
+    long_description=readme,
 )
