@@ -41,6 +41,6 @@ setup(
             'example_project/sample_call'
         ],
     },
-    license='BSD',
+    license='GNU GPL',
     long_description=read('README'),
 )
