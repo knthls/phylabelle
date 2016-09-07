@@ -75,7 +75,7 @@ Configuration
 
 Phylabelle can be configured locally for every project. Therefore just modify
 the file ``local_settings.py`` in your project folder. Make sure to use valid
-python syntax. Modifiable options are explained :ref:`here<settings>`.
+python syntax. Modifiable options are explained :ref:`here <settings>`_.
 
 
 Operating instructions
