@@ -5,7 +5,7 @@ phylabelle
 Identify phylogenetically close pairs of proteomes, located in different
 partitions across the phylogenetic tree.
 
-Documentation can be found `here<http://phylabelle.readthedocs.io/en/latest/>`_
+Documentation can be found `here <http://phylabelle.readthedocs.io/en/latest/>`_
 
 What is phylabelle?
 -------------------
@@ -44,7 +44,7 @@ installed.
 If you intend to construct your own phylogeny, taking advadntage of the built in
 wrapper for PhyloPhlAn, make sure PhyloPhlAn is installed and working. (see
 https://huttenhower.sph.harvard.edu/phylophlan or check out the tutorial
-`here<http://phylabelle.readthedocs.io/en/latest/phylophlan.html>`_)
+`here <http://phylabelle.readthedocs.io/en/latest/phylophlan.html>`_)
 
 In case you need to install phylabelle locally, just use
 
