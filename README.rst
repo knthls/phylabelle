@@ -1,3 +1,9 @@
+DEPRECATION NOTICE: 2019/05/29
+==============================
+
+If anyone feels the need to use this tool, please open an issue. If there are no issues until the end of the year this repo will be deleted. Probably the involved APIs have changed anyway.
+
+
 ==========
 phylabelle
 ==========
